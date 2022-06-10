@@ -1,0 +1,80 @@
+Make,Type,Year,Origin,Color,Options,Engine_Size,Fuel_Type,Gear_Type,Mileage,Region,Price,Negotiable
+Toyota,Avalon,2015,Other,White,Semi Full,3.5,Gas,Automatic,80000,Dammam,86000,False
+Lexus,ES,2016,Other,Another Color,Full,3.5,Gas,Automatic,87000,Dammam,119000,False
+GMC,Acadia,2014,Saudi,Black,Full,3.6,Gas,Automatic,193000,Dammam,58000,False
+GMC,Yukon,2014,Saudi,White,Full,5.3,Gas,Automatic,327000,Dammam,77000,False
+Lexus,RC,2015,Other,White,Full,3.3,Gas,Automatic,139000,Dammam,121000,False
+Mazda,6,2019,Saudi,Silver,Semi Full,2.5,Gas,Automatic,108000,Qassim,75000,False
+Hyundai,Accent,2017,Saudi,Grey,Standard,1.4,Gas,Automatic,200000,Dammam,30000,False
+Chevrolet,Tahoe,2016,Saudi,Silver,Standard,5.2,Gas,Automatic,144000,Al-Ahsa,112000,False
+GMC,Yukon,2014,Saudi,Red,Full,6.2,Gas,Automatic,36000,Al-Ahsa,95000,False
+Nissan,Datsun,2007,Saudi,White,Full,1.6,Gas,Manual,432000,Al-Medina,27000,False
+Kia,Rio,2014,Saudi,White,Standard,1.4,Gas,Automatic,78000,Dammam,24000,False
+Toyota,Prado,2016,Saudi,White,Semi Full,4.0,Gas,Automatic,192901,Riyadh,114500,False
+Ford,Explorer,2015,Gulf Arabic,Black,Full,3.5,Gas,Automatic,105407,Riyadh,115000,False
+Toyota,Land Cruiser 70,2019,Gulf Arabic,White,Semi Full,4.0,Gas,Manual,131592,Riyadh,116000,False
+Toyota,Furniture,2019,Saudi,White,Semi Full,4.0,Gas,Automatic,73909,Riyadh,116500,False
+Toyota,Land Cruiser,2021,Gulf Arabic,White,Full,4.6,Gas,Automatic,10000,Riyadh,0,True
+Toyota,Land Cruiser,2015,Saudi,Black,Full,4.6,Gas,Automatic,255000,Riyadh,0,True
+Chevrolet,Caprice,2015,Saudi,White,Full,6.0,Gas,Automatic,9000,Riyadh,0,True
+Nissan,Patrol,2017,Saudi,Brown,Full,4.0,Gas,Automatic,55000,Riyadh,0,True
+Chevrolet,Malibu,2015,Saudi,Black,Full,2.5,Gas,Automatic,162000,Riyadh,0,True
+GMC,Yukon,2012,Saudi,Silver,Full,5.3,Gas,Automatic,148000,Riyadh,0,True
+Honda,Odyssey,2014,Saudi,Silver,Full,3.5,Gas,Automatic,252000,Riyadh,0,True
+Dodge,Charger,2014,Saudi,White,Full,3.6,Gas,Automatic,147000,Riyadh,0,True
+Toyota,Ciocca,2009,Saudi,Black,Full,5.7,Gas,Automatic,251000,Riyadh,0,True
+Lexus,ES,2015,Saudi,Bronze,Full,3.5,Gas,Automatic,95000,Riyadh,0,True
+INFINITI,QX,2014,Saudi,Blue,Full,3.7,Gas,Automatic,186000,Riyadh,0,True
+Ford,Expedition,2013,Saudi,White,Standard,5.4,Gas,Automatic,93000,Riyadh,0,True
+GMC,Yukon,2016,Saudi,Silver,Standard,5.3,Gas,Automatic,103000,Dammam,0,True
+Toyota,Rav4,2020,Saudi,White,Standard,2.0,Gas,Automatic,30000,Najran,93000,False
+Lexus,LX,2014,Saudi,Bronze,Full,5.7,Gas,Automatic,243000,Dammam,0,True
+Toyota,Land Cruiser,2016,Saudi,White,Full,4.6,Gas,Automatic,167643,Dammam,0,True
+Toyota,Corolla,2018,Saudi,Silver,Standard,1.6,Gas,Automatic,90084,Riyadh,50000,False
+Nissan,Datsun,2016,Saudi,White,Semi Full,2.7,Gas,Automatic,109766,Riyadh,50500,False
+Hyundai,Elantra,2019,Saudi,Navy,Standard,1.6,Gas,Automatic,101364,Riyadh,50500,False
+Ford,Expedition,2012,Saudi,White,Semi Full,5.4,Gas,Automatic,177078,Riyadh,51000,False
+Toyota,Prado,2012,Saudi,White,Semi Full,2.7,Gas,Automatic,432345,Dammam,0,True
+Mazda,CX9,2014,Saudi,Black,Full,3.7,Gas,Automatic,388000,Riyadh,37000,False
+Dodge,Challenger,2018,Other,Another Color,Full,4.5,Gas,Automatic,90000,Dammam,113000,False
+Ford,Taurus,2016,Other,Another Color,Full,3.5,Gas,Automatic,105,Riyadh,83000,False
+Kia,Optima,2015,Saudi,Navy,Semi Full,2.4,Gas,Automatic,359000,Riyadh,32000,False
+Porsche,Panamera,2011,Saudi,White,Full,4.8,Gas,Automatic,49000,Dammam,125000,False
+Chevrolet,Impala,2018,Gulf Arabic,Black,Standard,3.6,Gas,Automatic,112000,Dammam,67000,False
+Renault,Duster,2017,Saudi,Silver,Standard,2.0,Gas,Automatic,83000,Riyadh,26000,False
+Genesis,Prestige,2016,Saudi,Black,Standard,3.8,Gas,Automatic,165000,Riyadh,84000,False
+Hyundai,Elantra,2017,Saudi,White,Semi Full,2.0,Gas,Automatic,150000,Riyadh,40000,False
+Toyota,Land Cruiser,2011,Saudi,White,Full,4.6,Gas,Automatic,211000,Dammam,115000,False
+Hyundai,Elantra,2016,Saudi,White,Standard,1.6,Gas,Automatic,172600,Dammam,35000,False
+Nissan,VTC,2015,Saudi,White,Standard,4.8,Gas,Manual,164000,Tabouk,0,True
+Nissan,Patrol,1997,Saudi,White,Semi Full,4.0,Gas,Manual,85000,Riyadh,0,True
+Ford,Fusion,2017,Other,White,Full,2.0,Diesel,Automatic,55000,Riyadh,65000,False
+Chevrolet,Suburban,1997,Saudi,Another Color,Semi Full,1.5,Gas,Automatic,2149656,Dammam,0,True
+GMC,Suburban,1998,Saudi,Black,Semi Full,2.8,Gas,Automatic,146000,Makkah,0,True
+Toyota,Hilux,2017,Gulf Arabic,White,Semi Full,2.7,Gas,Manual,189000,Dammam,78000,False
+Lexus,LX,2012,Saudi,White,Full,5.7,Gas,Automatic,352000,Riyadh,0,True
+Toyota,Hiace,2016,Saudi,White,Standard,2.7,Gas,Manual,180000,Abha,72000,False
+GMC,Yukon,2015,Saudi,Black,Full,6.2,Gas,Automatic,216000,Besha,98000,False
+Mercedes,S,1980,Other,White,Standard,3.0,Gas,Automatic,160000,Riyadh,40000,False
+Ford,Victoria,2011,Saudi,Another Color,Standard,4.6,Gas,Automatic,270,Dammam,35000,False
+Hyundai,Elantra,2018,Saudi,Silver,Full,2.0,Gas,Automatic,97588,Jeddah,55000,False
+Mazda,6,2016,Saudi,Red,Full,2.5,Gas,Automatic,117000,Hafar Al-Batin,72000,False
+Ford,Taurus,2018,Saudi,Black,Standard,3.5,Gas,Automatic,180,Riyadh,0,True
+Chevrolet,Tahoe,2017,Saudi,Black,Semi Full,8.0,Gas,Automatic,220,Arar,118000,False
+Nissan,Patrol,2020,Saudi,Grey,Full,1.4,Gas,Automatic,89000,Riyadh,210000,False
+Ford,Victoria,1999,Other,Golden,Semi Full,4.6,Gas,Automatic,391047,Aseer,0,True
+Mercedes,S,2012,Gulf Arabic,Navy,Full,3.3,Gas,Automatic,85000,Al-Medina,110000,False
+Dodge,Charger,2012,Saudi,Yellow,Full,6.4,Gas,Automatic,167000,Al-Medina,85000,False
+Toyota,Furniture,2018,Saudi,White,Semi Full,2.7,Gas,Automatic,224000,Dammam,85000,False
+Hyundai,Accent,2017,Saudi,Silver,Semi Full,1.4,Gas,Automatic,174000,Jeddah,24000,False
+Chrysler,C300,2019,Saudi,Black,Full,5.7,Gas,Automatic,45000,Riyadh,145000,False
+Mazda,6,2019,Saudi,Black,Full,2.1,Gas,Automatic,81000,Jeddah,90000,False
+Nissan,Sunny,2014,Saudi,White,Standard,1.5,Gas,Automatic,176000,Makkah,0,True
+Toyota,Land Cruiser,2019,Saudi,White,Full,4.6,Gas,Automatic,134000,Al-Ahsa,170000,False
+Toyota,Camry,2019,Saudi,Black,Standard,2.5,Hybrid,Automatic,55000,Makkah,80000,False
+Toyota,Furniture,2018,Saudi,White,Full,2.7,Gas,Automatic,120000,Hafar Al-Batin,0,True
+Changan,CS95,2020,Saudi,Brown,Full,2.0,Gas,Automatic,32000,Jazan,0,True
+BMW,The 7,2016,Saudi,White,Full,2.0,Gas,Automatic,161,Khobar,160000,False
+Hyundai,Elantra,2014,Saudi,Grey,Full,2.0,Gas,Automatic,290000,Riyadh,33500,False
+Kia,Cores,2005,Saudi,White,Standard,4.0,Gas,Manual,400,Makkah,10000,False
+Ford,Taurus,2016,Saudi,Grey,Semi Full,3.5,Gas,Automatic,66000,Riyadh,77000,False
