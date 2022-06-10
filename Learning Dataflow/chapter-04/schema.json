@@ -1,0 +1,27 @@
+{
+ "BigQuery Schema": [{
+   "name": "Order_ID",
+   "type": "STRING"
+  },
+  {
+   "name": "Amount",
+   "type": "STRING"
+  },
+  {
+   "name": "Profit",
+   "type": "STRING"
+  },
+  {
+   "name": "Quantity",
+   "type": "STRING"
+  },
+  {
+   "name": "Category",
+   "type": "STRING"
+  },
+  {
+   "name": "Sub_Category",
+   "type": "STRING"
+  }
+ ]
+}
