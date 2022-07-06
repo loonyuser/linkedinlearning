@@ -1,0 +1,240 @@
+cuisine_id,Cuisine
+1,Afghan
+2,Alpine
+3,Alsatian
+4,American
+5,American Contemporary
+6,Anago / Saltwater Eel
+7,Andalusian
+8,Apulian
+9,Asian
+10,Asian Contemporary
+11,Asian Influences
+12,Austrian
+13,Bakery
+14,Barbecue
+15,Basque
+16,Bavarian
+17,Beef Specialities
+18,Beijing Cuisine
+19,Belgian
+20,Brazilian
+21,Breton
+22,British Contemporary
+23,Bulgogi
+24,Burmese
+25,Calabrian
+26,Californian
+27,Cambodian
+28,Campanian
+29,Cantonese
+30,Cantonese Roast Meats
+31,Caribbean
+32,Castilian
+33,Catalan
+34,Central Asian
+35,Chankonabe
+36,Chao Zhou
+37,Chicken Specialities
+38,Chinese
+39,Chinese Contemporary
+40,Chiu Chow
+41,Chueotang
+42,Classic Cuisine
+43,Classic French
+44,Colombian
+45,Congee
+46,Contemporary
+47,Corsican
+48,Country cooking
+49,Crab Specialities
+50,Creative
+51,Creative British
+52,Creative French
+53,Creole
+54,Croatian
+55,Cuisine from Abruzzo
+56,Cuisine from Alentejo
+57,Cuisine from Aveyron
+58,Cuisine from Basilicata
+59,Cuisine from Franche-Comte
+60,Cuisine from Lazio
+61,Cuisine from Romagna
+62,Cuisine from South West France
+63,Cuisine from the Marches
+64,Cuisine from Valtellina
+65,Curry
+66,Czech
+67,Danish
+68,Deli
+69,Dim Sum
+70,Doganitang
+71,Dongbei
+72,Dubu
+73,Duck Specialities
+74,Dumplings
+75,Dwaeji-gukbap
+76,Emilian
+77,English
+78,Ethiopian
+79,European
+80,European Contemporary
+81,Filipino
+82,Finnish
+83,Flemish
+84,French
+85,French Contemporary
+86,Friulian
+87,Fugu / Pufferfish
+88,Fujian
+89,Fusion
+90,Galician
+91,Gastropub
+92,Gejang
+93,German
+94,Gomtang
+95,Greek
+96,Grills
+97,Hakkanese
+98,Hang Zhou
+99,Home Cooking
+100,Hotpot
+101,Huaiyang
+102,Hubei
+103,Hunanese
+104,Hungarian
+105,Indian
+106,Indian Vegetarian
+107,Indonesian
+108,Innovative
+109,International
+110,Irish
+111,Isan
+112,Israeli
+113,Italian
+114,Italian Contemporary
+115,Italian-American
+116,Izakaya
+117,Japanese
+118,Japanese Contemporary
+119,Jiangzhe
+120,Jokbal
+121,Kalguksu
+122,Korean
+123,Korean Contemporary
+124,Kushiage
+125,Lao
+126,Latin American
+127,Lebanese
+128,Ligurian
+129,Lombardian
+130,Macanese
+131,Malaysian
+132,Mandu
+133,Mantuan
+134,Market Cuisine
+135,Meats and Grills
+136,Mediterranean Cuisine
+137,Memil-guksu
+138,Mexican
+139,Middle Eastern
+140,Milanese
+141,Modern British
+142,Modern Cuisine
+143,Modern French
+144,Moroccan
+145,Naengmyeon
+146,Nepali
+147,Ningbo
+148,Noodles
+149,Noodles and Congee
+150,North African
+151,Northern Thai
+152,Norwegian
+153,Obanzai
+154,Oden
+155,Okinawa Cuisine
+156,Okonomiyaki
+157,Onigiri
+158,Organic
+159,Pakistani
+160,Peranakan
+161,Persian
+162,Peruvian
+163,Piedmontese
+164,Pizza
+165,Polish
+166,Portuguese
+167,Provencal
+168,Ramen
+169,Regional Cuisine
+170,Regional European
+171,Rice Dishes
+172,Roman
+173,Russian
+174,Sardinian
+175,Savoyard
+176,Scandinavian
+177,Scottish
+178,Seafood
+179,Seasonal Cuisine
+180,Seolleongtang
+181,Shandong
+182,Shanghainese
+183,Sharing
+184,Shojin
+185,Shun Tak
+186,Sichuan
+187,Sicilian
+188,Singaporean
+189,Singaporean and Malaysian
+190,Small eats
+191,Smoerrebroed
+192,Soba
+193,South African
+194,South American
+195,South East Asian
+196,South Indian
+197,Southern
+198,Southern Thai
+199,Spanish
+200,Spanish Contemporary
+201,Sri Lankan
+202,Steakhouse
+203,Street Food
+204,Sujebi
+205,Sukiyaki
+206,Sushi
+207,Swedish
+208,Swiss
+209,Taiwanese
+210,Taizhou
+211,Tempura
+212,Teochew
+213,Teppanyaki
+214,Tex-Mex
+215,Thai
+216,Thai and Vietnamese
+217,Thai contemporary
+218,Thai-Chinese
+219,Tibetan
+220,Tonkatsu
+221,Traditional British
+222,Traditional Cuisine
+223,Turkish
+224,Tuscan
+225,Udon
+226,Umbrian
+227,Unagi / Freshwater Eel
+228,Vegan
+229,Vegetarian
+230,Venetian
+231,Vietnamese
+232,World Cuisine
+233,Xibei
+234,Xinjiang
+235,Yakitori
+236,Yoshoku
+237,Yukhoe
+238,Yunnanese
+239,Zhejiang
