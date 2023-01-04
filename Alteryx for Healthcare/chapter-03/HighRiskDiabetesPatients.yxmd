@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\Loonycorn\Documents\Alteryx\data\Diabetes.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Diabetes.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PatientID" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Int16" />
+            <Field name="DMIndicator" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Gender" size="1" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="String" />
+            <Field name="YearOfBirth" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Int16" />
+            <Field name="Location" size="17" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+            <Field name="Smoking Status Indicator" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Lipitor Atorvastatin" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Lisinopril" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Simvastatin" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Benign_essential_hypertension" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Lumbago" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Mixed_hyperlipidemia" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Routine_general_medical_examination_at_a_health_care_facility" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Unspecified_essential_hypertension" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Max_IsAbnormalValue" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="150" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Location</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Location</RootName>
+          <Delimeters value="-" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DMIndicator" selected="True" type="V_String" size="3" />
+            <SelectField field="Location" selected="False" />
+            <SelectField field="Location1" selected="True" rename="City" />
+            <SelectField field="Location2" selected="True" rename="State" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="366" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"PatientID","DMIndicator","Gender","YearOfBirth","Smoking Status Indicator","Lipitor Atorvastatin","Lisinopril","Simvastatin","Benign_essential_hypertension","Lumbago","Mixed_hyperlipidemia","Routine_general_medical_examination_at_a_health_care_facility","Unspecified_essential_hypertension","Max_IsAbnormalValue","City","State"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="570" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">50</Value>
+          <Value name="validation pct">50</Value>
+          <Value name="rand seed">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="Logistic_Regression">
+        <Position x="666" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">advanced</Value>
+          <Value name="lambda_1se">True</Value>
+          <Value name="lambda_min">False</Value>
+          <Value name="Model Name">Logistic_Regression</Value>
+          <Value name="Y Var">DMIndicator</Value>
+          <Value name="X Vars">Smoking Status Indicator,Lipitor Atorvastatin,Lisinopril,Simvastatin,Benign_essential_hypertension,Lumbago,Mixed_hyperlipidemia,Routine_general_medical_examination_at_a_health_care_facility,Unspecified_essential_hypertension,Max_IsAbnormalValue</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec" />
+          <Value name="regularization">False</Value>
+          <Value name="alpha">0.5</Value>
+          <Value name="standardize_pred">False</Value>
+          <Value name="internal_cv">False</Value>
+          <Value name="nfolds">5</Value>
+          <Value name="lambda">lambda_1se</Value>
+          <Value name="set_seed_internal_cv">False</Value>
+          <Value name="seed_internal_cv">1</Value>
+          <Value name="lambda_no_cv">0.5</Value>
+          <Value name="posClass">
+          </Value>
+          <Value name="Link">logit</Value>
+          <Value name="external_cv">False</Value>
+          <Value name="nfolds_external">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="stratified">False</Value>
+          <Value name="set_seed_external_cv">False</Value>
+          <Value name="external_seed_value">1</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Logistic_Regression</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Logistic_Regression/Supporting_Macros/Logistic_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Logistic_Regression/Supporting_Macros/Logistic_Regression.yxmc" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="762" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_28536_95406c587041a947a2396bbc767dbd64_\Engine_28536_5b5e8b6beaea274abed7a456bb0de1d0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="Score">
+        <Position x="762" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="858" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Score_1] &gt; 0.6 &#xA;	THEN &quot;High&quot;&#xA;ELSEIF [Score_1] &lt;= 0.6 &amp;&amp; [Score_1] &gt; 0.3&#xA;	THEN &quot;Medium&quot;&#xA;ELSE &quot;Low&quot;&#xA;ENDIF&#xA;" field="SegmentPatients" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SegmentPatients = IF [Score_1] &gt; 0.6 
+	THEN "High"
+ELSEIF [Score_1] &lt;= 0.6 &amp;&amp; [S...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="954" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>SegmentPatients</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-12-19 04:57:10</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2022-12-19 04:57:10</StartDate>
+              <EndDate>2022-12-19 04:57:10</EndDate>
+              <Operand>High</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[SegmentPatients] = "High"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="462" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_28536_95406c587041a947a2396bbc767dbd64_\Engine_28536_00c3124c799f2a43b53923602ddd98ee~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1050" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_28536_95406c587041a947a2396bbc767dbd64_\Engine_28536_6aeffa735254b14e9e6d05fa6c1f2ad3~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output26" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output26" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Estimation" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Validation" />
+      <Destination ToolID="9" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Interactive Report" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>HighRiskDiabetesPatients</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="317f9a3c-21a4-4533-a074-20fde1633df4" />
+      <Telemetry>
+        <PreviousWorkflowId value="f85c89b1-951d-42b1-9485-00a013177f34" />
+        <OriginWorkflowId value="f85c89b1-951d-42b1-9485-00a013177f34" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

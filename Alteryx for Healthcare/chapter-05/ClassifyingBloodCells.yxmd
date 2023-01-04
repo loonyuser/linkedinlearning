@@ -1,0 +1,677 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="402" width="806" height="309" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Folded value="False" />
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="451" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>blood_cell_holdout.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FullPath" size="32767" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="V_WString" />
+                <Field name="Directory" size="32767" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="V_WString" />
+                <Field name="FileName" size="260" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="V_WString" />
+                <Field name="Size" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="Int64" />
+                <Field name="Class" size="1073741823" source="Formula: Replace([Directory],&quot;\&quot;,&quot;&quot;)" type="V_WString" />
+                <Field name="path" size="1073741823" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="V_WString" />
+                <Field name="file" size="1073741823" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="V_WString" />
+                <Field name="page" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="Int32" />
+                <Field name="image" size="2147483647" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="Blob" />
+                <Field name="image_processed" size="2147483647" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="595" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_model.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>blood_cell_model.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="{&quot;modeling_mode&quot;: &quot;image_recognition&quot;, &quot;column_names&quot;: [&quot;C:Alteryxblood_celleosinophil&quot;, &quot;C:Alteryxblood_celllymphocyte&quot;, &quot;C:Alteryxblood_cellmonocyte&quot;], &quot;image_column_name&quot;: &quot;image_processed&quot;, &quot;label_column_name&quot;: &quot;Class&quot;, &quot;batch_size&quot;: 32}" name="Model" size="2147483647" source="ImageRecognition" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="Predict">
+            <Position x="272" y="523" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <schemaID>Tools.Predict.2</schemaID>
+              <DesignerVersion />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Predict Values</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="Python" EngineDllEntryPoint="Predict\main.py" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="392" y="523" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FullPath" selected="False" />
+                <SelectField field="Directory" selected="False" />
+                <SelectField field="FileName" selected="False" />
+                <SelectField field="Size" selected="False" />
+                <SelectField field="path" selected="False" />
+                <SelectField field="file" selected="False" />
+                <SelectField field="page" selected="False" />
+                <SelectField field="image" selected="False" />
+                <SelectField field="image_processed" selected="False" />
+                <SelectField field="Class_C:Alteryxblood_celleosinophil" selected="False" />
+                <SelectField field="Class_C:Alteryxblood_celllymphocyte" selected="False" />
+                <SelectField field="Class_C:Alteryxblood_cellmonocyte" selected="False" />
+                <SelectField field="Class_C:Alteryxblood_cellneutrophil" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="488" y="523" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Class_predicted] == [Class]&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="Prediction" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Prediction = IF [Class_predicted] == [Class]
+THEN 1
+ELSE 0
+ENDIF
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="584" y="463" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_28580_b0e5c2de93855f4ba39fe736c4ba1435_\Engine_28580_08ac84ecb18b744eaa303fea0cf68f97~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="668" y="595" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Prediction</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2022-12-19 17:03:21</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>1</Operand>
+                  <StartDate>2022-12-19 17:03:21</StartDate>
+                  <EndDate>2022-12-19 17:03:21</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Prediction] = "1"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings>
+            <Position x="680" y="523" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="ChiSquare">False</Value>
+              <Value name="Var1 Chi">Class</Value>
+              <Value name="Var2 Chi">Class</Value>
+              <Value name="NoChiSquare">True</Value>
+              <Value name="Var1">Class_predicted</Value>
+              <Value name="Var2">Class</Value>
+              <Value name="Var3" />
+              <Value name="Var4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\ContingencyTable.yxmc" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="776" y="535" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_28580_b0e5c2de93855f4ba39fe736c4ba1435_\Engine_28580_0dd5b35d70c3b94198ec77e738f99dad~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="53" width="936" height="321" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Folded value="False" />
+          <Disabled value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+            <Position x="78" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Directory>C:\Alteryx\blood_cell</Directory>
+              <FileSpec>*.*</FileSpec>
+              <IncludeSubDirs value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dir C:\Alteryx\blood_cell\*.*</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="198" y="197" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace([Directory], &quot;FILE_PATH&quot;, &quot;&quot;)" field="Class" size="1073741823" type="V_WString" />
+                <FormulaField expression="Replace([Directory],&quot;\&quot;,&quot;&quot;)" field="Class" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Class = Replace([Directory], "FILE_PATH", "")
+Class = Replace([Directory],"\",""...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="330" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ShortFileName" selected="False" />
+                <SelectField field="CreationTime" selected="False" />
+                <SelectField field="LastAccessTime" selected="False" />
+                <SelectField field="LastWriteTime" selected="False" />
+                <SelectField field="AttributeArchive" selected="False" />
+                <SelectField field="AttributeCompressed" selected="False" />
+                <SelectField field="AttributeEncrypted" selected="False" />
+                <SelectField field="AttributeHidden" selected="False" />
+                <SelectField field="AttributeNormal" selected="False" />
+                <SelectField field="AttributeOffline" selected="False" />
+                <SelectField field="AttributeReadonly" selected="False" />
+                <SelectField field="AttributeReparsePoint" selected="False" />
+                <SelectField field="AttributeSparseFile" selected="False" />
+                <SelectField field="AttributeSystem" selected="False" />
+                <SelectField field="AttributeTemporary" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="PDFInput">
+            <Position x="438" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Directory</Field>
+              <ModeSelect>directory</ModeSelect>
+              <FileOption>all</FileOption>
+              <FileType />
+              <OutputFieldName>image</OutputFieldName>
+              <PDFDirectory isWorkflowDependency="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="Python" EngineDllEntryPoint="PDFInput\pdf_input_engine.py" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="ImageProcessing">
+            <Position x="558" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ImageField>image</ImageField>
+              <Steps>
+                <name>brightness-balance</name>
+                <config>
+                  <mode>auto</mode>
+                  <brightness_level>0</brightness_level>
+                </config>
+              </Steps>
+              <Steps>
+                <name>scale</name>
+                <config>
+                  <width>75</width>
+                  <unit>percentage</unit>
+                  <lock_aspect_ratio>true</lock_aspect_ratio>
+                </config>
+              </Steps>
+              <Steps>
+                <name>alignment</name>
+                <config>
+                  <mode>custom</mode>
+                  <degree>69</degree>
+                </config>
+              </Steps>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="Python" EngineDllEntryPoint="ImageProcessing\image_processing_engine.py" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings>
+            <Position x="642" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="estimation pct">70</Value>
+              <Value name="validation pct">20</Value>
+              <Value name="rand seed">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="ImageRecognition">
+            <Position x="762" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ImageFieldTraining>image_processed</ImageFieldTraining>
+              <LabelFieldTraining>Class</LabelFieldTraining>
+              <ImageFieldValidation>image_processed</ImageFieldValidation>
+              <LabelFieldValidation>Class</LabelFieldValidation>
+              <Epochs>40</Epochs>
+              <Model>InceptionResNetV2</Model>
+              <BatchSize>32</BatchSize>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="Python" EngineDllEntryPoint="ImageRecognition\image_recognition_engine.py" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="714" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_holdout.yxdb</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>blood_cell_holdout.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="870" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_18784_c25f2cb04f78ec40919bedb7c515945f_\Engine_18784_30716f49c13a4c4f89833fc0dd960970~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="870" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_18784_c25f2cb04f78ec40919bedb7c515945f_\Engine_18784_d2ed75ee9a3f2f468a52f6cbbd6cc5d3~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="858" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\Loonycorn\Documents\Alteryx\data\blood_cell_model.yxdb</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>blood_cell_model.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="PredictedData" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Interactive Pivot" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Estimation" />
+      <Destination ToolID="13" Connection="Training" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Validation" />
+      <Destination ToolID="13" Connection="Validation" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Holdout" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="ModelOutput" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="EvaluationMetrics" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="ModelReport" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ClassifyingBloodCells</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e4027df0-2551-4a60-aae9-c5987c2179e3" />
+      <Telemetry>
+        <PreviousWorkflowId value="668c2950-6103-4893-bc2d-04c41ef582c9" />
+        <OriginWorkflowId value="668c2950-6103-4893-bc2d-04c41ef582c9" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

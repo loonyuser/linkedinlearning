@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Predicting_Diabetes.Diagnosis.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NewPatientID" size="254" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="V_String" />
+            <Field name="Benign_essential_hypertension" size="254" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="V_String" />
+            <Field name="Lumbago" size="254" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="V_String" />
+            <Field name="Mixed_hyperlipidemia" size="254" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="V_String" />
+            <Field name="Routine_general_medical_examination_at_a_health_care_facility" size="254" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="V_String" />
+            <Field name="Unspecified_essential_hypertension" size="254" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Patients.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Predicting_Diabetes.Patients.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PatientID" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Int16" />
+            <Field name="DMIndicator" size="254" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+            <Field name="Gender" size="254" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+            <Field name="YearOfBirth" size="254" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+            <Field name="Location" size="100" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+            <Field name="Smoking Status Indicator" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Lipitor Atorvastatin" size="254" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+            <Field name="Lisinopril" size="254" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+            <Field name="Simvastatin" size="254" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Predicting_Diabetes.Lab_Results.xlsx</AnnotationText>
+          <DefaultAnnotationText>Predicting_Diabetes.Lab_Results.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PatientID" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ReportYear" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="PanelName" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ObservationYear" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Status" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="HL7Identifier" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="HL7Text" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ObservationValue" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Units" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ReferenceRange" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="AbnormalFlags" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ResultStatus" size="255" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ObservationYear:1" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="IsAbnormalValue" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="NewPatientID" selected="True" />
+            <Field field="Benign_essential_hypertension" selected="True" />
+            <Field field="Lumbago" selected="True" />
+            <Field field="Mixed_hyperlipidemia" selected="True" />
+            <Field field="Routine_general_medical_examination_at_a_health_care_facility" selected="True" />
+            <Field field="Unspecified_essential_hypertension" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NewPatientID" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Int16" />
+            <Field name="Benign_essential_hypertension" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Lumbago" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Mixed_hyperlipidemia" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Routine_general_medical_examination_at_a_health_care_facility" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+            <Field name="Unspecified_essential_hypertension" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Diagnosis.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="DMIndicator" selected="True" />
+            <Field field="Gender" selected="True" />
+            <Field field="YearOfBirth" selected="True" />
+            <Field field="Location" selected="True" />
+            <Field field="Lipitor Atorvastatin" selected="True" />
+            <Field field="Lisinopril" selected="True" />
+            <Field field="Simvastatin" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PatientID" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Int16" />
+            <Field name="DMIndicator" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Gender" size="1" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="String" />
+            <Field name="YearOfBirth" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Int16" />
+            <Field name="Location" size="17" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="V_String" />
+            <Field name="Smoking Status Indicator" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Lipitor Atorvastatin" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Lisinopril" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+            <Field name="Simvastatin" source="File: odb:Provider=SQLNCLI10.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=AddressSales;Data Source=.\SQLExpress;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=BD-LT-AM-02;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False|dbo.&quot;Patients&quot;" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="PatientID" selected="True" />
+            <Field field="PanelName" selected="True" />
+            <Field field="Status" selected="True" />
+            <Field field="HL7Identifier" selected="True" />
+            <Field field="HL7Text" selected="True" />
+            <Field field="ObservationValue" selected="True" />
+            <Field field="Units" selected="True" />
+            <Field field="ReferenceRange" selected="True" />
+            <Field field="AbnormalFlags" selected="True" />
+            <Field field="ResultStatus" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PatientID" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Int16" />
+            <Field name="ReportYear" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="PanelName" size="44" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ObservationYear" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Status" size="5" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="String" />
+            <Field name="HL7Identifier" size="8" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="String" />
+            <Field name="HL7Text" size="44" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ObservationValue" size="7" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="String" />
+            <Field name="Units" size="13" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ReferenceRange" size="14" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="AbnormalFlags" size="17" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ResultStatus" size="9" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="String" />
+            <Field name="ObservationYear:1" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="IsAbnormalValue" source="File: C:\Users\Loonycorn\Documents\Alteryx\data\Predicting_Diabetes.Lab_Results.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="270" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PatientID" action="GroupBy" rename="PatientID" />
+            <SummarizeField field="IsAbnormalValue" action="Max" rename="Max_IsAbnormalValue" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="402" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="NewPatientID" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="PatientID" />
+            </JoinInfo>
+            <JoinInfo connection="#3">
+              <Field field="PatientID" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#3_PatientID" selected="True" rename="Input_#3_PatientID" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PatientID" selected="True" />
+            <SelectField field="DMIndicator" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="YearOfBirth" selected="True" />
+            <SelectField field="Location" selected="True" />
+            <SelectField field="Smoking Status Indicator" selected="True" />
+            <SelectField field="Lipitor Atorvastatin" selected="True" />
+            <SelectField field="Lisinopril" selected="True" />
+            <SelectField field="Simvastatin" selected="True" />
+            <SelectField field="NewPatientID" selected="False" />
+            <SelectField field="Benign_essential_hypertension" selected="True" />
+            <SelectField field="Lumbago" selected="True" />
+            <SelectField field="Mixed_hyperlipidemia" selected="True" />
+            <SelectField field="Routine_general_medical_examination_at_a_health_care_facility" selected="True" />
+            <SelectField field="Unspecified_essential_hypertension" selected="True" />
+            <SelectField field="Input_#3_PatientID" selected="False" />
+            <SelectField field="Max_IsAbnormalValue" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="666" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="PatientID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PatientID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="786" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\Loonycorn\Documents\Alteryx\data\Diabetes.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Diabetes.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Joins</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3272d2cc-9721-4507-bb6a-c8290c712ad1" />
+      <Telemetry>
+        <PreviousWorkflowId value="178d2b13-26bc-484f-b3ff-3a384583f035" />
+        <OriginWorkflowId value="178d2b13-26bc-484f-b3ff-3a384583f035" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
