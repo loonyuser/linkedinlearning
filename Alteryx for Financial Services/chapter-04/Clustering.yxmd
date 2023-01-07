@@ -1,0 +1,586 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\Loonycorn\Documents\Alteryx\data\clustering_data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>clustering_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="age" size="2147483647" source="(Multiple Sources)" type="V_String" />
+            <Field name="balance" size="2147483647" source="(Multiple Sources)" type="V_String" />
+            <Field name="default_no" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="default_yes" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="ed_primary" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="ed_secondary" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="ed_tertiary" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="ed_unknown" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="housing_no" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="housing_yes" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_admin_" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_blue_collar" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_entrepreneur" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_housemaid" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_management" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_retired" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_self_employed" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_services" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_student" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_technician" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_unemployed" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="job_unknown" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="loan_no" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="loan_yes" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="marital_divorced" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="marital_married" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+            <Field name="marital_single" size="1" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="198" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">90</Value>
+          <Value name="validation pct">10</Value>
+          <Value name="rand seed">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="age" selected="True" />
+            <Field field="balance" selected="True" />
+            <Field field="default_no" selected="True" />
+            <Field field="default_yes" selected="True" />
+            <Field field="ed_primary" selected="True" />
+            <Field field="ed_secondary" selected="True" />
+            <Field field="ed_tertiary" selected="True" />
+            <Field field="ed_unknown" selected="True" />
+            <Field field="housing_no" selected="True" />
+            <Field field="housing_yes" selected="True" />
+            <Field field="job_admin_" selected="True" />
+            <Field field="job_blue_collar" selected="True" />
+            <Field field="job_entrepreneur" selected="True" />
+            <Field field="job_housemaid" selected="True" />
+            <Field field="job_management" selected="True" />
+            <Field field="job_retired" selected="True" />
+            <Field field="job_self_employed" selected="True" />
+            <Field field="job_services" selected="True" />
+            <Field field="job_student" selected="True" />
+            <Field field="job_technician" selected="True" />
+            <Field field="job_unemployed" selected="True" />
+            <Field field="job_unknown" selected="True" />
+            <Field field="loan_no" selected="True" />
+            <Field field="loan_yes" selected="True" />
+            <Field field="marital_divorced" selected="True" />
+            <Field field="marital_married" selected="True" />
+            <Field field="marital_single" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="age" source="(Multiple Sources)" type="Byte" />
+            <Field name="balance" source="(Multiple Sources)" type="Int32" />
+            <Field name="default_no" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="default_yes" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="ed_primary" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="ed_secondary" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="ed_tertiary" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="ed_unknown" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="housing_no" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="housing_yes" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_admin_" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_blue_collar" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_entrepreneur" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_housemaid" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_management" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_retired" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_self_employed" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_services" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_student" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_technician" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_unemployed" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_unknown" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="loan_no" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="loan_yes" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="marital_divorced" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="marital_married" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="marital_single" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="498" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model name">kmeans</Value>
+          <Value name="the fields">age + balance + default_no + default_yes + ed_primary + ed_secondary + ed_tertiary + ed_unknown + housing_no + housing_yes + job_admin_ + job_blue_collar + job_entrepreneur + job_housemaid + job_management + job_retired + job_self_employed + job_services + job_student + job_technician + job_unemployed + job_unknown + loan_no + loan_yes + marital_divorced + marital_married + marital_single</Value>
+          <Value name="standardize">False</Value>
+          <Value name="z score">True</Value>
+          <Value name="unit interval">False</Value>
+          <Value name="k-means">True</Value>
+          <Value name="k-medians">False</Value>
+          <Value name="neural gas">False</Value>
+          <Value name="num clus">6</Value>
+          <Value name="num seeds">10</Value>
+          <Value name="plot points">True</Value>
+          <Value name="plot centroids">True</Value>
+          <Value name="max comp">2</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">8.00</Value>
+          <Value name="in.h">8.00</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="out" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Sum_Dists" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\K-Centroids_Cluster_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="606" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_24468_fb494b538606e54cb9a1c744d79c58a7_\Engine_24468_e71f44f904e9594b8744151bdb0a38a2~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings>
+        <Position x="714" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="clus name">Cluster</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="age" source="R-DATA:" type="Int32" />
+            <Field name="balance" source="R-DATA:" type="Int32" />
+            <Field name="default_no" source="R-DATA:" type="Int32" />
+            <Field name="default_yes" source="R-DATA:" type="Int32" />
+            <Field name="ed_primary" source="R-DATA:" type="Int32" />
+            <Field name="ed_secondary" source="R-DATA:" type="Int32" />
+            <Field name="ed_tertiary" source="R-DATA:" type="Int32" />
+            <Field name="ed_unknown" source="R-DATA:" type="Int32" />
+            <Field name="housing_no" source="R-DATA:" type="Int32" />
+            <Field name="housing_yes" source="R-DATA:" type="Int32" />
+            <Field name="job_admin_" source="R-DATA:" type="Int32" />
+            <Field name="job_blue_collar" source="R-DATA:" type="Int32" />
+            <Field name="job_entrepreneur" source="R-DATA:" type="Int32" />
+            <Field name="job_housemaid" source="R-DATA:" type="Int32" />
+            <Field name="job_management" source="R-DATA:" type="Int32" />
+            <Field name="job_retired" source="R-DATA:" type="Int32" />
+            <Field name="job_self_employed" source="R-DATA:" type="Int32" />
+            <Field name="job_services" source="R-DATA:" type="Int32" />
+            <Field name="job_student" source="R-DATA:" type="Int32" />
+            <Field name="job_technician" source="R-DATA:" type="Int32" />
+            <Field name="job_unemployed" source="R-DATA:" type="Int32" />
+            <Field name="job_unknown" source="R-DATA:" type="Int32" />
+            <Field name="loan_no" source="R-DATA:" type="Int32" />
+            <Field name="loan_yes" source="R-DATA:" type="Int32" />
+            <Field name="marital_divorced" source="R-DATA:" type="Int32" />
+            <Field name="marital_married" source="R-DATA:" type="Int32" />
+            <Field name="marital_single" source="R-DATA:" type="Int32" />
+            <Field name="Cluster" source="R-DATA:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Append_Cluster.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="294" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="age" selected="True" />
+            <Field field="balance" selected="True" />
+            <Field field="default_no" selected="True" />
+            <Field field="default_yes" selected="True" />
+            <Field field="ed_primary" selected="True" />
+            <Field field="ed_secondary" selected="True" />
+            <Field field="ed_tertiary" selected="True" />
+            <Field field="ed_unknown" selected="True" />
+            <Field field="housing_no" selected="True" />
+            <Field field="housing_yes" selected="True" />
+            <Field field="job_admin_" selected="True" />
+            <Field field="job_blue_collar" selected="True" />
+            <Field field="job_entrepreneur" selected="True" />
+            <Field field="job_housemaid" selected="True" />
+            <Field field="job_management" selected="True" />
+            <Field field="job_retired" selected="True" />
+            <Field field="job_self_employed" selected="True" />
+            <Field field="job_services" selected="True" />
+            <Field field="job_student" selected="True" />
+            <Field field="job_technician" selected="True" />
+            <Field field="job_unemployed" selected="True" />
+            <Field field="job_unknown" selected="True" />
+            <Field field="loan_no" selected="True" />
+            <Field field="loan_yes" selected="True" />
+            <Field field="marital_divorced" selected="True" />
+            <Field field="marital_married" selected="True" />
+            <Field field="marital_single" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="age" source="(Multiple Sources)" type="Byte" />
+            <Field name="balance" source="(Multiple Sources)" type="Int16" />
+            <Field name="default_no" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="default_yes" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="ed_primary" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="ed_secondary" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="ed_tertiary" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="ed_unknown" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="housing_no" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="housing_yes" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_admin_" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_blue_collar" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_entrepreneur" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_housemaid" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_management" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_retired" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_self_employed" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_services" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_student" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_technician" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_unemployed" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="job_unknown" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="loan_no" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="loan_yes" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="marital_divorced" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="marital_married" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+            <Field name="marital_single" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings>
+        <Position x="714" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="clus name">Cluster</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="age" source="R-DATA:" type="Int32" />
+            <Field name="balance" source="R-DATA:" type="Int32" />
+            <Field name="default_no" source="R-DATA:" type="Int32" />
+            <Field name="default_yes" source="R-DATA:" type="Int32" />
+            <Field name="ed_primary" source="R-DATA:" type="Int32" />
+            <Field name="ed_secondary" source="R-DATA:" type="Int32" />
+            <Field name="ed_tertiary" source="R-DATA:" type="Int32" />
+            <Field name="ed_unknown" source="R-DATA:" type="Int32" />
+            <Field name="housing_no" source="R-DATA:" type="Int32" />
+            <Field name="housing_yes" source="R-DATA:" type="Int32" />
+            <Field name="job_admin_" source="R-DATA:" type="Int32" />
+            <Field name="job_blue_collar" source="R-DATA:" type="Int32" />
+            <Field name="job_entrepreneur" source="R-DATA:" type="Int32" />
+            <Field name="job_housemaid" source="R-DATA:" type="Int32" />
+            <Field name="job_management" source="R-DATA:" type="Int32" />
+            <Field name="job_retired" source="R-DATA:" type="Int32" />
+            <Field name="job_self_employed" source="R-DATA:" type="Int32" />
+            <Field name="job_services" source="R-DATA:" type="Int32" />
+            <Field name="job_student" source="R-DATA:" type="Int32" />
+            <Field name="job_technician" source="R-DATA:" type="Int32" />
+            <Field name="job_unemployed" source="R-DATA:" type="Int32" />
+            <Field name="job_unknown" source="R-DATA:" type="Int32" />
+            <Field name="loan_no" source="R-DATA:" type="Int32" />
+            <Field name="loan_yes" source="R-DATA:" type="Int32" />
+            <Field name="marital_divorced" source="R-DATA:" type="Int32" />
+            <Field name="marital_married" source="R-DATA:" type="Int32" />
+            <Field name="marital_single" source="R-DATA:" type="Int32" />
+            <Field name="Cluster" source="R-DATA:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Append_Cluster.yxmc" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="473" y="0" width="205" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Folded value="False" />
+          <Disabled value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings>
+            <Position x="498" y="49" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="the fields">age + balance + default_no + default_yes + ed_primary + ed_secondary + ed_tertiary + ed_unknown + housing_no + housing_yes + job_admin_ + job_blue_collar + job_entrepreneur + job_housemaid + job_management + job_retired + job_self_employed + job_services + job_student + job_technician + job_unemployed + job_unknown + loan_no + loan_yes + marital_divorced + marital_married + marital_single</Value>
+              <Value name="standardize">False</Value>
+              <Value name="z score">True</Value>
+              <Value name="unit interval">False</Value>
+              <Value name="k-means">True</Value>
+              <Value name="k-medians">False</Value>
+              <Value name="neural gas">False</Value>
+              <Value name="min clus">2</Value>
+              <Value name="max clus">6</Value>
+              <Value name="bootstrap rep">50</Value>
+              <Value name="num seeds">3</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">8.00</Value>
+              <Value name="in.h">8.00</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\K-Centroids_Diagnostics.yxmc" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="594" y="49" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\LOONYC~1\AppData\Local\Temp\Engine_23160_3502f0eaad1b744ab2ef8fe2d073ed2d_\Engine_23160_ea373dd644e7bd47b3aae6a6190561aa~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Estimation" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Validation" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="9" Connection="First Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Second Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Reports" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="First Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Second Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Reports" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Clustering</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1e997b74-bc7f-4d0e-abf6-ca2c10d96ecc" />
+      <Telemetry>
+        <PreviousWorkflowId value="2009a6ac-b398-4475-b876-9a41a2657901" />
+        <OriginWorkflowId value="2009a6ac-b398-4475-b876-9a41a2657901" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
