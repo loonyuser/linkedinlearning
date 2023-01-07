@@ -1,0 +1,12 @@
+Installing Alteryx Designer Desktop, the Intelligence Suite, and the Financial Services Starter Kit
+-----
+
+## After installing Alteryx Designer Desktop, when running the designer, on the first run you may be asked to fill in 
+## a form to set the user. Fill the details of your registered user
+
+## You may also see a pop-up asking for keys to register the product. 
+## On top of this pop-up there should be a button to start the free trial - use that to activate the trial
+
+## After installing Alteryx Designer Desktop with the Alteryx intelligence suite for computer vision capabilities
+
+## Finally install the Banking and Financial Services starter kit 
